@@ -136,7 +136,7 @@ python full-test.py --input path/to/faulty.py --output repaired.py
 * **BiLSTM Error Classification:** Three classes (Missing / Extra / Incorrect); embeddings + bidirectional context + softmax
 * **LSTM Token Repair:** Embedding → stacked LSTM layers → token repair suggestions → iterative retries until valid fix
 
-![Error Examples](docs/figures/Figure7 (1).png)
+![Error Examples](docs/figures/Fig7).png)
 
 
 ## 8) Acknowledgements
