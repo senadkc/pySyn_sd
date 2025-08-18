@@ -69,7 +69,7 @@ python text_classification_metrics_runs.py \
   --batch_size 256 --epochs 150 --seed 42
 ```
 
-![BiLSTM Architecture](docs/figures/fig3_bilstm_arch.png)
+![BiLSTM Architecture](docs/figures/hataturmod.png)
 ![Table 4: BiLSTM Metrics](docs/figures/table4_bilstm_metrics.png)
 
 ### 4.2 Token Repair (LSTM)
@@ -136,7 +136,7 @@ python full-test.py --input path/to/faulty.py --output repaired.py
 * **BiLSTM Error Classification:** Three classes (Missing / Extra / Incorrect); embeddings + bidirectional context + softmax
 * **LSTM Token Repair:** Embedding → stacked LSTM layers → token repair suggestions → iterative retries until valid fix
 
-![Error Examples](docs/figures/Fig7).png)
+![Error Examples](docs/figures/Fig7.png)
 
 
 ## 8) Acknowledgements
