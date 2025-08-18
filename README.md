@@ -70,7 +70,7 @@ python text_classification_metrics_runs.py \
 ```
 
 ![BiLSTM Architecture](docs/figures/hataturmod.png)
-![Table 4: BiLSTM Metrics](docs/figures/table4_bilstm_metrics.png)
+![Table 4: BiLSTM Metrics](docs/figures/tab4.jpeg)
 
 ### 4.2 Token Repair (LSTM)
 
@@ -81,7 +81,7 @@ python lstm_metrics_std_runs.py \
 ```
 
 ![LSTM Architecture](docs/figures/tokenmodel.png)
-![Table 7: LSTM Metrics](docs/figures/table7_lstm_metrics.png)
+![Table 7: LSTM Metrics](docs/figures/tab7.jpeg)
 
 ### 4.3 End-to-End Demo
 
@@ -113,7 +113,7 @@ python full-test.py --input path/to/faulty.py --output repaired.py
 * “Unexpected EOF”: **75%**
 * “Invalid syntax (overall)”: **59.8%**
 
-![Detailed Results by Type](docs/figures/table11_results.png)
+![Detailed Results by Type](docs/figures/tab11.jpeg)
 
 ---
 
