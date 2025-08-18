@@ -69,7 +69,7 @@ python text_classification_metrics_runs.py \
   --batch_size 256 --epochs 150 --seed 42
 ```
 
-![BiLSTM Architecture](docs/figures/hataturmod.png)
+![BiLSTM Architecture](docs/figures/hataturumod.png)
 ![Table 4: BiLSTM Metrics](docs/figures/tab4.jpeg)
 
 ### 4.2 Token Repair (LSTM)
