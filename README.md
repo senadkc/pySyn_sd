@@ -45,12 +45,15 @@ pip install astunparse astroid gast
 npm install -g pyright
 ````
 
-**System (example):** Python 3.8, TensorFlow 2.12.0, Intel i9-10900X, 2×RTX 3090 (24GB)
+**System:** Python 3.8, TensorFlow 2.12.0, Intel i9-10900X, 2×RTX 3090 (24GB)
 **Training time (example):** \~1h24m (BiLSTM), \~1h27m (LSTM)
 
 ---
 
 ## 3) Data
+
+The dataset used in this project is available here:  
+[APR_study_SD (GitHub)](https://github.com/senadkc/APR_study_SD)
 
 * **Training:** 2,000 correct + 6,000 faulty (2k Missing, 2k Extra, 2k Incorrect)
 * **Test-1 (Synthetic):** 925 samples (300/300/300 + 25 indentation)
