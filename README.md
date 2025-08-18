@@ -1,7 +1,6 @@
 # py_syn_sd
 
 
-```markdown
 # Resource-Efficient Python Syntax Error Repair (BiLSTM + LSTM)
 
 _A lightweight Automatic Program Repair (APR) pipeline for Python syntax errors with hybrid fault localization, BiLSTM error type classification, and LSTM token-level fixing._
