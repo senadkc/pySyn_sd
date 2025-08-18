@@ -5,7 +5,7 @@
 
 _A lightweight Automatic Program Repair (APR) pipeline for Python syntax errors with hybrid fault localization, BiLSTM error type classification, and LSTM token-level fixing._
 
-![Workflow](docs/figures/flowchart.png)
+<img src="docs/figures/flowchart.png" width="500">
 
 **TL;DR**
 - **Dataset:** 6k synthetic faulty samples  
@@ -69,8 +69,8 @@ python text_classification_metrics_runs.py \
   --batch_size 256 --epochs 150 --seed 42
 ```
 
-![BiLSTM Architecture](docs/figures/hataturumod.png)
-![Table 4: BiLSTM Metrics](docs/figures/tab4.jpeg)
+<img src="docs/figures/tab4.jpeg" width="350">
+
 
 ### 4.2 Token Repair (LSTM)
 
@@ -80,8 +80,8 @@ python lstm_metrics_std_runs.py \
   --batch_size 256 --epochs 250 --seed 42
 ```
 
-![LSTM Architecture](docs/figures/tokenmodel.png)
-![Table 7: LSTM Metrics](docs/figures/tab7.jpeg)
+<img src="docs/figures/tab7.jpeg" width="350">
+
 
 ### 4.3 End-to-End Demo
 
@@ -113,7 +113,8 @@ python full-test.py --input path/to/faulty.py --output repaired.py
 * “Unexpected EOF”: **75%**
 * “Invalid syntax (overall)”: **59.8%**
 
-![Detailed Results by Type](docs/figures/tab11.jpeg)
+<img src="docs/figures/tab11.jpeg" width="600">
+
 
 ---
 
@@ -126,8 +127,6 @@ python full-test.py --input path/to/faulty.py --output repaired.py
 | CodeGen  |              81,536 |        350 |            53% |
 | CodeT5   |             275,041 |        770 |            27% |
 
-![Efficiency & Comparison](docs/figures/fig8_efficiency.png)
-
 ---
 
 ## 7) Method Overview
@@ -136,11 +135,10 @@ python full-test.py --input path/to/faulty.py --output repaired.py
 * **BiLSTM Error Classification:** Three classes (Missing / Extra / Incorrect); embeddings + bidirectional context + softmax
 * **LSTM Token Repair:** Embedding → stacked LSTM layers → token repair suggestions → iterative retries until valid fix
 
-![Error Examples](docs/figures/Fig7.png)
+<img src="docs/figures/Fig7.png" width="450">
 
 
 ## 8) Acknowledgements
 
 We thank Bursa Technical University High-Performance Computing Laboratory for support.
 
-```
