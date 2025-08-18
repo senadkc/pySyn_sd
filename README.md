@@ -1,4 +1,4 @@
-# py_syn_sd
+# pySyn_sd
 
 
 # Resource-Efficient Python Syntax Error Repair (BiLSTM + LSTM)
