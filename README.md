@@ -22,8 +22,8 @@ _A lightweight Automatic Program Repair (APR) pipeline for Python syntax errors 
 
 .
 ├─ full-test.py                         # End-to-end APR demo
-├─ lstm\_metrics\_std\_runs.py             # LSTM repair metrics across runs
-├─ text\_classification\_metrics\_runs.py  # BiLSTM classification metrics                     
+├─ lstm_metrics_std_runs.py             # LSTM repair metrics across runs
+├─ text_classification_metrics_runs.py  # BiLSTM classification metrics                     
 ├─ docs/
 │  └─ figures/                          # Exported PNG figures & tables from PDF
 └─ README.md
@@ -80,7 +80,7 @@ python lstm_metrics_std_runs.py \
   --batch_size 256 --epochs 250 --seed 42
 ```
 
-![LSTM Architecture](docs/figures/fig4_lstm_arch.png)
+![LSTM Architecture](docs/figures/tokenmodel.png)
 ![Table 7: LSTM Metrics](docs/figures/table7_lstm_metrics.png)
 
 ### 4.3 End-to-End Demo
@@ -136,7 +136,7 @@ python full-test.py --input path/to/faulty.py --output repaired.py
 * **BiLSTM Error Classification:** Three classes (Missing / Extra / Incorrect); embeddings + bidirectional context + softmax
 * **LSTM Token Repair:** Embedding → stacked LSTM layers → token repair suggestions → iterative retries until valid fix
 
-![Error Examples](docs/figures/fig5_7_error_examples.png)
+![Error Examples](docs/figures/Figure7 (1).png)
 
 
 ## 8) Acknowledgements
