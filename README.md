@@ -5,7 +5,7 @@
 
 _A lightweight Automatic Program Repair (APR) pipeline for Python syntax errors with hybrid fault localization, BiLSTM error type classification, and LSTM token-level fixing._
 
-<img src="docs/figures/flowchart.png" width="500">
+<img src="docs/figures/workflow2.jpeg" width="500">
 
 **TL;DR**
 - **Dataset:** 6k synthetic faulty samples  
@@ -138,7 +138,7 @@ python full-test.py --input path/to/faulty.py --output repaired.py
 * **BiLSTM Error Classification:** Three classes (Missing / Extra / Incorrect); embeddings + bidirectional context + softmax
 * **LSTM Token Repair:** Embedding → stacked LSTM layers → token repair suggestions → iterative retries until valid fix
 
-<img src="docs/figures/Fig7.png" width="450">
+<img src="docs/figures/figure7.jpg" width="450">
 
 
 ## 8) Acknowledgements
